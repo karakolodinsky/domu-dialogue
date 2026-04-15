@@ -1,0 +1,55 @@
+<html>
+    <head>
+        
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./tokenStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js tokenizer script tester</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>js tokenizer script tester</h1>
+
+        <input id="command"></input> 
+        <button onclick="processInput()">submit</button>
+
+        <p>input command in box</p>
+        <p>type /help for a list of commands </p>
+        <div class="termnviz">
+        <div id='terminal'> 
+            <p>  </p>
+        </div>
+        
+        <div class="viz" id="viz">
+            <div id="textarea">
+            <div class="nameandsprite">
+                <p class="name" id='name1'> dogu</p>
+                <img src="https://www.domu.reisen/media/7-WJ4WSXL3.png" id="sprite1">
+                
+                <img  id="sprite2">
+                <p class="name" id="name2"> </p>
+                </div>
+                <div class="textbox">
+                    <div class="text" id="type"> 
+                    <div class="spaceforCurrent">
+                        <p id="currenttext"> sample text</p>
+                    </div>
+                    </div>
+            </div>
+            </div>
+        </div>                            
+
+        </div>
+
+        <p>
+        some sample commands
+        /character L komaeda 1: changes the left character to the sprite of character named komaeda
+        </p>
+
+        <script src="tokenScript.js"></script> 
+    </body>
+
+
+</html>
